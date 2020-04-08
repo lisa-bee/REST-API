@@ -3,6 +3,6 @@ const app = express()
 const port = 3000
 
 
-app.get("/", (req, res) => res.send("Welcome"))
+app.get("/", (req, res) => res.send("Welcome to this page"))
 
 app.listen(port, () => console.log("Running example page"))
