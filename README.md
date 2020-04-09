@@ -1,7 +1,7 @@
 # REST-API
 A project with REST-API and CRUD. 
 
-## Description
+### Description
 In this project I create a simple REST-API with the use of Express framework in Node.js. The functionality of CRUD is used and with that the following endpoints are used: GET, POST, PUT and DELETE. These endpoints handle an array of severel dogs with 4 differens characteristics each.
 
 ### Fullfilled requirements
@@ -11,7 +11,7 @@ In this project I create a simple REST-API with the use of Express framework in 
 -The datas are saved locally.
 -GIT and GitHub used.
 
-## How to run and build
+### How to run and build
 Open project in VS code application or likely and run command line: 
 npm init
 npm install
