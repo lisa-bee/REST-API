@@ -25,13 +25,14 @@ const dogs = [
 app.use(express.json())
 
 
+
 app.get("/dogs", (req, res) => {
     res.json(dogs)
 })
 
-app.get("dogs/:id", (req, res) => {
+app.get("/dogs/:id", (req, res) => {
     const foundDog = dogs.find((dog) => {
-        if (dog.id === req.params.id) {
+        if (dog.id.toString() === req.params.id) {
             return true
         } else {
             return false
