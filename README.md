@@ -19,5 +19,4 @@ npm install express --save
 
 In response.rest client file, test the app by sending the different requests on the differend endpoints (urls) listed in the .rest file. 
 
-
-Link to GitHub repo: https://github.com/lisa-bee/REST-API
+### Link to GitHub repo: https://github.com/lisa-bee/REST-API
