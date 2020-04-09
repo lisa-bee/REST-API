@@ -12,7 +12,8 @@ Content-Type: application/json
 {
     "id": 4,
     "name": "Belle",
-    "age": 12
+    "age": 12,
+    "likes": "wood sticks"
 }
 
 ###

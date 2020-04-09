@@ -7,17 +7,20 @@ const dogs = [
     {
         id: 1,
         name: "Fido",
-        age: 5
+        age: 5,
+        likes: "favourite ball"
     },
     {
         id: 2,
         name: "Rex",
-        age: 3
+        age: 3,
+        likes: "long walks"
     },
     {
         id: 3,
         name: "Max",
-        age: 8
+        age: 8,
+        likes: "food"
     }
 
 ]
