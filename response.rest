@@ -1,4 +1,23 @@
-GET http://localhost:3000
+GET http://localhost:3000/dogs
 
 ###
 
+GET http://localhost:3000/dogs/2
+
+###
+
+POST http://localhost:3000/dogs
+Content-Type: application/json
+
+{
+    "id": 4,
+    "name": "Belle",
+    "age": 12
+}
+
+###
+
+DELETE http://localhost:3000/dogs
+Content-Type: application/json
+
+###
