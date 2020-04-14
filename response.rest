@@ -19,6 +19,14 @@ Content-Type: application/json
 ###
 
 PUT http://localhost:3000/dogs/3
+Content-Type: application/json
+
+{
+    "name": "24rjk",
+    "age": 12,
+    "likes": "wohejsticks"
+}
+
 
 ###
 

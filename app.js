@@ -51,7 +51,18 @@ app.post("/dogs", (req, res) => {
 })
 
 app.put("/dogs/:id", (req, res) => {
-   
+   const index = dogs.findIndex((dog) => {
+    return dog.id == req.params.id
+   })
+   dogs[index] = {
+       name: req.body.name,
+       id: req.params.id,
+       age: req.body.age,
+       likes: req.body.likes
+   }
+   res.status(200)
+   res.send()
+
 })
 
 app.delete("/dogs", (req, res) => {
