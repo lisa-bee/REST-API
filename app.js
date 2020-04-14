@@ -50,6 +50,10 @@ app.post("/dogs", (req, res) => {
     res.send()
 })
 
+app.put("/dogs/:id", (req, res) => {
+   
+})
+
 app.delete("/dogs", (req, res) => {
     dogs.splice((dogs.length -1), 1)
     res.status(201)
@@ -58,4 +62,4 @@ app.delete("/dogs", (req, res) => {
 
 app.get("/", (req, res) => res.send("Welcome to this page"))
 
-app.listen(port, () => console.log("Running example page"))
+app.listen(port, () => console.log("Running page"))

@@ -2,7 +2,7 @@ GET http://localhost:3000/dogs
 
 ###
 
-GET http://localhost:3000/dogs/3
+GET http://localhost:3000/dogs/2
 
 ###
 
@@ -15,6 +15,10 @@ Content-Type: application/json
     "age": 12,
     "likes": "wood sticks"
 }
+
+###
+
+PUT http://localhost:3000/dogs/3
 
 ###
 
