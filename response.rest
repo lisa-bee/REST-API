@@ -22,15 +22,15 @@ PUT http://localhost:3000/dogs/3
 Content-Type: application/json
 
 {
-    "name": "24rjk",
-    "age": 12,
-    "likes": "wohejsticks"
+    "name": "Molly",
+    "age": 16,
+    "likes": "food"
 }
 
 
 ###
 
-DELETE http://localhost:3000/dogs
+DELETE http://localhost:3000/dogs/2
 Content-Type: application/json
 
 ###

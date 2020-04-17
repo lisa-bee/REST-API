@@ -55,8 +55,8 @@ app.put("/dogs/:id", (req, res) => {
     return dog.id == req.params.id
    })
    dogs[index] = {
-       name: req.body.name,
        id: req.params.id,
+       name: req.body.name,
        age: req.body.age,
        likes: req.body.likes
    }
@@ -65,9 +65,13 @@ app.put("/dogs/:id", (req, res) => {
 
 })
 
-app.delete("/dogs", (req, res) => {
-    dogs.splice((dogs.length -1), 1)
-    res.status(201)
+app.delete("/dogs/:id", (req, res) => {
+    const dog = dogs.find((dog) => dog.id === parseInt(req.params.id))
+    if (!dog) {
+        res.status(404)
+    } else {
+        dogs.splice((dogs.indexOf(dog)), 1)
+    }
     res.send()
 })
 
