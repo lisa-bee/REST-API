@@ -75,6 +75,4 @@ app.delete("/dogs/:id", (req, res) => {
     res.send()
 })
 
-app.get("/", (req, res) => res.send("Welcome to this page"))
-
 app.listen(port, () => console.log("Running page"))
